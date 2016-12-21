@@ -13,7 +13,7 @@ namespace Lugares.Controllers
 {
     public class POIController : Controller
     {
-        private LugaresContext db = new LugaresContext();
+        private DatumContext db = new DatumContext();
 
         // GET: POIs
         public ActionResult Index()

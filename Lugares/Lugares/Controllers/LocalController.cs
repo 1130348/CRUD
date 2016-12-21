@@ -13,7 +13,7 @@ namespace Lugares.Controllers
 {
     public class LocalController : Controller
     {
-        private LugaresContext db = new LugaresContext();
+        private DatumContext db = new DatumContext();
 
         // GET: Local
         public ActionResult Index()

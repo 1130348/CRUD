@@ -202,7 +202,7 @@
     <Compile Include="Controllers\LocalController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\POIController.cs" />
-    <Compile Include="DAL\LugaresContext.cs" />
+    <Compile Include="DAL\DatumContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

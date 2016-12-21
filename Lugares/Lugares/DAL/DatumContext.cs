@@ -8,10 +8,10 @@ using System.Web;
 
 namespace Lugares.DAL
 {
-    public class LugaresContext : DbContext
+    public class DatumContext : DbContext
     {
 
-        public LugaresContext() : base("LugaresContext")
+        public DatumContext() : base("LugaresContext")
         {
         }
 

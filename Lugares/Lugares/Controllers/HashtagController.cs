@@ -13,7 +13,7 @@ namespace Lugares.Controllers
 {
     public class HashtagController : Controller
     {
-        private LugaresContext db = new LugaresContext();
+        private DatumContext db = new DatumContext();
 
         // GET: Hashtag
         public ActionResult Index()
