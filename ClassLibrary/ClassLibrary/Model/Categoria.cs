@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Lugares.Models
+namespace ClassLibrary.Model
 {
-    public class Hashtag
+    public class Categoria
     {
         public int ID { get; set; }
-        public string Nome { get; set; }
+        public string nome { get; set; }
 
         public virtual ICollection<POI> POIs { get; set; }
     }

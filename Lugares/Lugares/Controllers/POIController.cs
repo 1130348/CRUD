@@ -6,8 +6,8 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using Lugares.DAL;
-using Lugares.Models;
+using ClassLibrary.DAL;
+using ClassLibrary.Model;
 
 namespace Lugares.Controllers
 {

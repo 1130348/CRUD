@@ -194,6 +194,7 @@ C:\Users\Joel\Desktop\Projeto_LAPR5\Lugares\Lugares\bin\Lugares.dll.config
 C:\Users\Joel\Desktop\Projeto_LAPR5\Lugares\Lugares\bin\Lugares.dll
 C:\Users\Joel\Desktop\Projeto_LAPR5\Lugares\Lugares\bin\Lugares.pdb
 C:\Users\Joel\Desktop\Projeto_LAPR5\Lugares\Lugares\bin\Antlr3.Runtime.dll
+C:\Users\Joel\Desktop\Projeto_LAPR5\Lugares\Lugares\bin\ClassLibrary.dll
 C:\Users\Joel\Desktop\Projeto_LAPR5\Lugares\Lugares\bin\EntityFramework.dll
 C:\Users\Joel\Desktop\Projeto_LAPR5\Lugares\Lugares\bin\EntityFramework.SqlServer.dll
 C:\Users\Joel\Desktop\Projeto_LAPR5\Lugares\Lugares\bin\Microsoft.AI.Agent.Intercept.dll
@@ -228,6 +229,7 @@ C:\Users\Joel\Desktop\Projeto_LAPR5\Lugares\Lugares\bin\System.Web.WebPages.Depl
 C:\Users\Joel\Desktop\Projeto_LAPR5\Lugares\Lugares\bin\System.Web.WebPages.dll
 C:\Users\Joel\Desktop\Projeto_LAPR5\Lugares\Lugares\bin\System.Web.WebPages.Razor.dll
 C:\Users\Joel\Desktop\Projeto_LAPR5\Lugares\Lugares\bin\WebGrease.dll
+C:\Users\Joel\Desktop\Projeto_LAPR5\Lugares\Lugares\bin\ClassLibrary.pdb
 C:\Users\Joel\Desktop\Projeto_LAPR5\Lugares\Lugares\bin\Antlr3.Runtime.pdb
 C:\Users\Joel\Desktop\Projeto_LAPR5\Lugares\Lugares\bin\Microsoft.AI.DependencyCollector.xml
 C:\Users\Joel\Desktop\Projeto_LAPR5\Lugares\Lugares\bin\Microsoft.AI.ServerTelemetryChannel.xml

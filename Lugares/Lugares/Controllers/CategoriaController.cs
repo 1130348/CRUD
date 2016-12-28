@@ -11,79 +11,78 @@ using ClassLibrary.Model;
 
 namespace Lugares.Controllers
 {
-    public class LocalController : Controller
+    public class CategoriaController : Controller
     {
         private DatumContext db = new DatumContext();
 
-        // GET: Local
+        // GET: Categoria
         public ActionResult Index()
         {
-            return View(db.Locals.ToList());
+            return View(db.Categorias.ToList());
         }
 
-        // GET: Local/Details/5
+        // GET: Categoria/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Local local = db.Locals.Find(id);
-            if (local == null)
+            Categoria categoria = db.Categorias.Find(id);
+            if (categoria == null)
             {
                 return HttpNotFound();
             }
-            return View(local);
+            return View(categoria);
         }
 
-        // GET: Local/Create
+        // GET: Categoria/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Local/Create
+        // POST: Categoria/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Nome,Latitude,Longitude")] Local local)
+        public ActionResult Create([Bind(Include = "ID,nome")] Categoria categoria)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    db.Locals.Add(local);
+                    db.Categorias.Add(categoria);
                     db.SaveChanges();
                     return RedirectToAction("Index");
                 }
-
-                return View(local);
+                return View(categoria);
             }
-            catch(DataException /* dex */)
+            catch (DataException /* dex */)
             {
                 //Log the error (uncomment dex variable name and add a line here to write a log.
                 ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists see your system administrator.");
             }
-            return View(local);
+            return View(categoria);
         }
 
-        // GET: Local/Edit/5
+        // GET: Categoria/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Local local = db.Locals.Find(id);
-            if (local == null)
+            Categoria categoria = db.Categorias.Find(id);
+            if (categoria == null)
             {
                 return HttpNotFound();
             }
-            return View(local);
+            return View(categoria);
         }
 
-        // POST: Local/Edit/5
+        // POST: Categoria/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost, ActionName("Edit")]
@@ -94,9 +93,9 @@ namespace Lugares.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            var localToUpdate = db.Locals.Find(id);
-            if (TryUpdateModel(localToUpdate, "",
-               new string[] { "Nome", "Latitude", "Longitude" }))
+            var categoriaToUpdate = db.Locals.Find(id);
+            if (TryUpdateModel(categoriaToUpdate, "",
+               new string[] { "Nome" }))
             {
                 try
                 {
@@ -110,10 +109,10 @@ namespace Lugares.Controllers
                     ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
                 }
             }
-            return View(localToUpdate);
+            return View(categoriaToUpdate);
         }
 
-        // GET: Local/Delete/5
+        // GET: Categoria/Delete/5
         public ActionResult Delete(int? id, bool? saveChangesError = false)
         {
             if (id == null)
@@ -124,23 +123,23 @@ namespace Lugares.Controllers
             {
                 ViewBag.ErrorMessage = "Delete failed. Try again, and if the problem persists see your system administrator.";
             }
-            Local local = db.Locals.Find(id);
-            if (local == null)
+            Categoria categoria = db.Categorias.Find(id);
+            if (categoria == null)
             {
                 return HttpNotFound();
             }
-            return View(local);
+            return View(categoria);
         }
 
-        // POST: Local/Delete/5
-        [HttpPost]
+        // POST: Categoria/Delete/5
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id)
+        public ActionResult DeleteConfirmed(int id)
         {
             try
             {
-                Local localToDelete = new Local() { ID = id };
-                db.Entry(localToDelete).State = EntityState.Deleted;
+                Categoria categoriaToDelete = new Categoria() { ID = id };
+                db.Entry(categoriaToDelete).State = EntityState.Deleted;
                 db.SaveChanges();
             }
             catch (DataException/* dex */)
