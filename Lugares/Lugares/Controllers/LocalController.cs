@@ -139,7 +139,7 @@ namespace Lugares.Controllers
         {
             try
             {
-                Local localToDelete = new Local() { ID = id };
+                Local localToDelete = new Local() { LocalID = id };
                 db.Entry(localToDelete).State = EntityState.Deleted;
                 db.SaveChanges();
             }

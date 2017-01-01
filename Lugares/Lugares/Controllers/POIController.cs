@@ -39,6 +39,7 @@ namespace Lugares.Controllers
         // GET: POIs/Create
         public ActionResult Create()
         {
+            ViewBag.CategoriaID = new SelectList(db.Categorias, "ID", "nome");
             return View();
         }
 
@@ -47,7 +48,7 @@ namespace Lugares.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Nome,Descricao")] POI pOI)
+        public ActionResult Create([Bind(Include = "Nome,Descricao,CategoriaID")] POI pOI)
         {
             try
             {
@@ -57,6 +58,9 @@ namespace Lugares.Controllers
                     db.SaveChanges();
                     return RedirectToAction("Index");
                 }
+
+                ViewBag.CategoriaID = new SelectList(db.Categorias, "ID", "Nome", pOI.CategoriaID);
+
             }
             catch (DataException /* dex */)
             {
@@ -138,7 +142,7 @@ namespace Lugares.Controllers
         {
             try
             {
-                POI poiToDelete = new POI() { ID = id };
+                POI poiToDelete = new POI() { PoiID = id };
                 db.Entry(poiToDelete).State = EntityState.Deleted;
                 db.SaveChanges();
             }

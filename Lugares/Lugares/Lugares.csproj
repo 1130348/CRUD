@@ -295,11 +295,11 @@
     <Content Include="Views\Local\Details.cshtml" />
     <Content Include="Views\Local\Edit.cshtml" />
     <Content Include="Views\Local\Index.cshtml" />
-    <Content Include="Views\POIs\Create.cshtml" />
-    <Content Include="Views\POIs\Delete.cshtml" />
-    <Content Include="Views\POIs\Details.cshtml" />
-    <Content Include="Views\POIs\Edit.cshtml" />
-    <Content Include="Views\POIs\Index.cshtml" />
+    <Content Include="Views\POI\Create.cshtml" />
+    <Content Include="Views\POI\Delete.cshtml" />
+    <Content Include="Views\POI\Details.cshtml" />
+    <Content Include="Views\POI\Edit.cshtml" />
+    <Content Include="Views\POI\Index.cshtml" />
     <Content Include="Views\Hashtag\Create.cshtml" />
     <Content Include="Views\Hashtag\Delete.cshtml" />
     <Content Include="Views\Hashtag\Details.cshtml" />

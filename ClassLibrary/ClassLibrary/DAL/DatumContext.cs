@@ -14,6 +14,8 @@ namespace ClassLibrary.DAL
 
         public DatumContext() : base("DatumContext")
         {
+            //this.Configuration.LazyLoadingEnabled = false;
+            //this.Configuration.ProxyCreationEnabled = false;
         }
 
         public DbSet<Local> Locals { get; set; }

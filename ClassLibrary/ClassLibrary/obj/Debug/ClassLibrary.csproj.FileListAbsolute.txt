@@ -19,3 +19,7 @@ C:\Users\Joel\Desktop\Projeto_LAPR5\ClassLibrary\ClassLibrary\bin\Debug\EntityFr
 C:\Users\Joel\Desktop\Projeto_LAPR5\ClassLibrary\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
 C:\Users\Joel\Desktop\Projeto_LAPR5\ClassLibrary\ClassLibrary\obj\Debug\ClassLibrary.dll
 C:\Users\Joel\Desktop\Projeto_LAPR5\ClassLibrary\ClassLibrary\obj\Debug\ClassLibrary.pdb
+C:\Users\Joel\Desktop\Projeto_LAPR5\ClassLibrary\ClassLibrary\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Joel\Desktop\Projeto_LAPR5\ClassLibrary\ClassLibrary\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Joel\Desktop\Projeto_LAPR5\ClassLibrary\ClassLibrary\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Joel\Desktop\Projeto_LAPR5\ClassLibrary\ClassLibrary\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
