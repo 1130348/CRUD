@@ -181,3 +181,15 @@ D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAP
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Cancela\Cancela\obj\Debug\Cancela.csprojResolveAssemblyReference.cache
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Cancela\Cancela\obj\Debug\Cancela.dll
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Cancela\Cancela\obj\Debug\Cancela.pdb
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Cancela\Cancela\bin\roslyn\csc.exe
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Cancela\Cancela\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Cancela\Cancela\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Cancela\Cancela\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Cancela\Cancela\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Cancela\Cancela\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Cancela\Cancela\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Cancela\Cancela\bin\roslyn\System.Collections.Immutable.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Cancela\Cancela\bin\roslyn\System.Reflection.Metadata.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Cancela\Cancela\bin\roslyn\vbc.exe
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Cancela\Cancela\bin\roslyn\VBCSCompiler.exe
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Cancela\Cancela\bin\roslyn\VBCSCompiler.exe.config

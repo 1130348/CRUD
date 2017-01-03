@@ -249,3 +249,17 @@ D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAP
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\obj\Debug\Lugares.csprojResolveAssemblyReference.cache
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\obj\Debug\Lugares.dll
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\obj\Debug\Lugares.pdb
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\bin\roslyn\csc.exe.config
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\bin\roslyn\csc.rsp
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\bin\roslyn\csi.exe
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\bin\roslyn\csi.rsp
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\bin\roslyn\System.AppContext.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\bin\roslyn\System.IO.FileSystem.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\bin\roslyn\vbc.exe.config
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\bin\roslyn\vbc.rsp
