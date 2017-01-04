@@ -10,7 +10,7 @@ namespace Cancela.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
+            ViewBag.Title = "Cancela API";
 
             return View();
         }
