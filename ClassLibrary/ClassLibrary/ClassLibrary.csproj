@@ -71,6 +71,9 @@
     <Compile Include="Model\Hashtag.cs" />
     <Compile Include="Model\Local.cs" />
     <Compile Include="Model\POI.cs" />
+    <Compile Include="Model\POIDTO.cs" />
+    <Compile Include="Model\POIDTOReceive.cs" />
+    <Compile Include="Model\POIDTOSend.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
