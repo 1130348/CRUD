@@ -20,24 +20,24 @@ namespace ClassLibrary.DAL
             locais.ForEach(l => context.Locals.Add(l));
             context.SaveChanges();
 
-            var categorias = new List<Categoria>
-            {
-                new Categoria { ID=1,nome="Restauração" },
-                new Categoria { ID=2,nome="Cultura" },
-            };
+            //var categorias = new List<Categoria>
+            //{
+            //    new Categoria { ID=1,nome="Restauração" },
+            //    new Categoria { ID=2,nome="Cultura" },
+            //};
 
-            categorias.ForEach(c => context.Categorias.Add(c));
-            context.SaveChanges();
+            //categorias.ForEach(c => context.Categorias.Add(c));
+            //context.SaveChanges();
 
-            var pois = new List<POI>
-            {
-                new POI { PoiID=1,Nome="McDonald's",Descricao="Restaurante",LocalID=1,CategoriaID=1 },
-                new POI { PoiID=2,Nome="A Abundância",Descricao="Monumento",LocalID=1,CategoriaID=2 },
-                new POI { PoiID=3,Nome="A Nacional",Descricao="Monumento",LocalID=1,CategoriaID=2 }
-            };
+            //var pois = new List<POI>
+            //{
+            //    new POI { PoiID=1,Nome="McDonald's",Descricao="Restaurante",LocalID=1,CategoriaID=1 },
+            //    new POI { PoiID=2,Nome="A Abundância",Descricao="Monumento",LocalID=1,CategoriaID=2 },
+            //    new POI { PoiID=3,Nome="A Nacional",Descricao="Monumento",LocalID=1,CategoriaID=2 }
+            //};
 
-            pois.ForEach(p => context.POIs.Add(p));
-            context.SaveChanges();
+            //pois.ForEach(p => context.POIs.Add(p));
+            //context.SaveChanges();
 
             var hashtags = new List<Hashtag>
             {

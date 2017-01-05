@@ -18,6 +18,7 @@ namespace Lugares.Controllers
         // GET: POIs
         public ActionResult Index()
         {
+            var pOIs = db.POIs.Include(p => p.Local);
             return View(db.POIs.ToList());
         }
 
@@ -39,7 +40,7 @@ namespace Lugares.Controllers
         // GET: POIs/Create
         public ActionResult Create()
         {
-            ViewBag.CategoriaID = new SelectList(db.Categorias, "ID", "nome");
+            ViewBag.LocalID = new SelectList(db.Locals, "LocalID", "Nome");
             return View();
         }
 
@@ -48,7 +49,7 @@ namespace Lugares.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Nome,Descricao,CategoriaID")] POI pOI)
+        public ActionResult Create([Bind(Include = "Nome,Descricao,LocalID,Categoria")] POI pOI)
         {
             try
             {
@@ -59,14 +60,14 @@ namespace Lugares.Controllers
                     return RedirectToAction("Index");
                 }
 
-                ViewBag.CategoriaID = new SelectList(db.Categorias, "ID", "Nome", pOI.CategoriaID);
+                //ViewBag.CategoriaID = new SelectList(db.Categorias, "ID", "Nome", pOI.CategoriaID);
 
             }
             catch (DataException /* dex */)
             {
                 //Log the error (uncomment dex variable name and add a line here to write a log.
                 ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists see your system administrator.");
-            }   
+            }
 
             return View(pOI);
         }
@@ -83,6 +84,7 @@ namespace Lugares.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.LocalID = new SelectList(db.Locals, "LocalID", "Nome", pOI.LocalID);
             return View(pOI);
         }
 
@@ -99,7 +101,7 @@ namespace Lugares.Controllers
             }
             var poiToUpdate = db.POIs.Find(id);
             if (TryUpdateModel(poiToUpdate, "",
-               new string[] { "Nome", "Descricao" }))
+               new string[] { "Nome", "Descricao", "Categoria" }))
             {
                 try
                 {

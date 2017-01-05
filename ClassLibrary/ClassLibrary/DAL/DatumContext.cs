@@ -21,7 +21,7 @@ namespace ClassLibrary.DAL
         public DbSet<Local> Locals { get; set; }
         public DbSet<POI> POIs { get; set; }
         public DbSet<Hashtag> Hashtags { get; set; }
-        public DbSet<Categoria> Categorias { get; set; }
+        public DbSet<Percurso> Percursos { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
