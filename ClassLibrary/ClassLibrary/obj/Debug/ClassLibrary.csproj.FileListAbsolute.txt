@@ -33,3 +33,18 @@ D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAP
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\ClassLibrary\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\ClassLibrary\ClassLibrary\obj\Debug\ClassLibrary.dll
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\ClassLibrary\ClassLibrary\obj\Debug\ClassLibrary.pdb
+C:\Users\Joel\Desktop\Projeto\ClassLibrary\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Joel\Desktop\Projeto\ClassLibrary\ClassLibrary\bin\Debug\ClassLibrary.dll.config
+C:\Users\Joel\Desktop\Projeto\ClassLibrary\ClassLibrary\bin\Debug\ClassLibrary.dll
+C:\Users\Joel\Desktop\Projeto\ClassLibrary\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\Users\Joel\Desktop\Projeto\ClassLibrary\ClassLibrary\bin\Debug\EntityFramework.dll
+C:\Users\Joel\Desktop\Projeto\ClassLibrary\ClassLibrary\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Joel\Desktop\Projeto\ClassLibrary\ClassLibrary\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Joel\Desktop\Projeto\ClassLibrary\ClassLibrary\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Joel\Desktop\Projeto\ClassLibrary\ClassLibrary\bin\Debug\Microsoft.Build.Framework.dll
+C:\Users\Joel\Desktop\Projeto\ClassLibrary\ClassLibrary\bin\Debug\EntityFramework.xml
+C:\Users\Joel\Desktop\Projeto\ClassLibrary\ClassLibrary\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Joel\Desktop\Projeto\ClassLibrary\ClassLibrary\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Joel\Desktop\Projeto\ClassLibrary\ClassLibrary\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Joel\Desktop\Projeto\ClassLibrary\ClassLibrary\obj\Debug\ClassLibrary.dll
+C:\Users\Joel\Desktop\Projeto\ClassLibrary\ClassLibrary\obj\Debug\ClassLibrary.pdb
