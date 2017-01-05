@@ -19,7 +19,7 @@ namespace ClassLibrary.Model
             this.Nome = poi.Nome;
             this.Descricao = poi.Descricao;
             this.LocalID = poi.LocalID;
-            this.CategoriaID = poi.CategoriaID;
+            //this.CategoriaID = poi.CategoriaID;
         }
     }
 }

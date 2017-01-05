@@ -9,7 +9,7 @@ namespace ClassLibrary.Model
     public class POIDTOSend : POIDTO
     {
         public virtual Local local { get; set; }
-        public virtual Categoria categoria { get; set; }
+        public virtual Categorias categoria { get; set; }
         //public string Username;
 
         public POIDTOSend(POI poi)
