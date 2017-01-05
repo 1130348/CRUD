@@ -22,9 +22,15 @@ namespace ClassLibrary.DAL
         public DbSet<POI> POIs { get; set; }
         public DbSet<Hashtag> Hashtags { get; set; }
         public DbSet<Percurso> Percursos { get; set; }
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+
+        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+        //}
+
+        public static DatumContext Create()
         {
-            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            return new DatumContext();
         }
 
     }

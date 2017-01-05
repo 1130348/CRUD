@@ -68,6 +68,7 @@
     <Compile Include="DAL\DatumInitializer.cs" />
     <Compile Include="Model\ApplicationUser.cs" />
     <Compile Include="Model\Hashtag.cs" />
+    <Compile Include="Model\IdentityModels.cs" />
     <Compile Include="Model\Local.cs" />
     <Compile Include="Model\Percurso.cs" />
     <Compile Include="Model\POI.cs" />
