@@ -8,112 +8,151 @@ using System.Web;
 using System.Web.Mvc;
 using ClassLibrary.DAL;
 using ClassLibrary.Model;
+using System.Web.Http;
+using System.Drawing;
+using System.Web.Http.Description;
+using System.Data.Entity.Infrastructure;
 
 namespace Cancela.Controllers
 {
-    public class POIsController : Controller
+    public class POIsController : ApiController
     {
         private DatumContext db = new DatumContext();
 
-        // GET: POIs
-        public ActionResult Index()
+        // GET: api/POIs
+        public IEnumerable<POIDTOSend> GetPOIs()
         {
-            return View(db.POIs.ToList());
-        }
-
-        // GET: POIs/Details/5
-        public ActionResult Details(int? id)
-        {
-            if (id == null)
+            List<POIDTOSend> newList = new List<POIDTOSend>();
+            IEnumerable<POI> list = db.POIs.ToList();
+            foreach(var poi in list)
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                newList.Add(new POIDTOSend(poi));
             }
-            POI pOI = db.POIs.Find(id);
-            if (pOI == null)
+            return newList;
+        }
+
+        // GET: api/POIs/5
+        [ResponseType(typeof(POIDTOSend))]
+        public IHttpActionResult GetPOI(int id)
+        {
+            POI poi = db.POIs.Find(id);
+            if(poi == null)
             {
-                return HttpNotFound();
+                return NotFound();
             }
-            return View(pOI);
+            return Ok(new POIDTOSend(poi));
         }
 
-        // GET: POIs/Create
-        public ActionResult Create()
+        // PUT: api/POIs/5
+        [ResponseType(typeof(void))]
+        public IHttpActionResult PutPOI(int id, POIDTOReceive poiDTO)
         {
-            return View();
-        }
-
-        // POST: POIs/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Nome,Descricao")] POI pOI)
-        {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                db.POIs.Add(pOI);
+                return BadRequest(ModelState);
+            }
+
+            if(id != poiDTO.PoiID)
+            {
+                return BadRequest();
+            }
+
+            POI poi = db.POIs.Find(id);
+
+            //if (poi.CheckNotOwner(User.Identity.GetUserId()))
+            //{
+            //    return StatusCode(HttpStatusCode.Unauthorized);
+            //}
+
+            copyToDto(poi, poiDTO);
+            db.Entry(poi).State = EntityState.Modified;
+
+            try
+            {
                 db.SaveChanges();
-                return RedirectToAction("Index");
             }
-
-            return View(pOI);
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!POIExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+            return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // GET: POIs/Edit/5
-        public ActionResult Edit(int? id)
+        // POST: api/POIs
+        [ResponseType(typeof(POIDTOSend))]
+        public IHttpActionResult PostPOI(POIDTOReceive poiDTO)
         {
-            if (id == null)
+            if (!ModelState.IsValid)
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                return BadRequest();
             }
-            POI pOI = db.POIs.Find(id);
-            if (pOI == null)
-            {
-                return HttpNotFound();
-            }
-            return View(pOI);
-        }
 
-        // POST: POIs/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Nome,Descricao")] POI pOI)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Entry(pOI).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            return View(pOI);
-        }
+            POI poi = new POI();
+            copyToDto(poi, poiDTO);
 
-        // GET: POIs/Delete/5
-        public ActionResult Delete(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            POI pOI = db.POIs.Find(id);
-            if (pOI == null)
-            {
-                return HttpNotFound();
-            }
-            return View(pOI);
-        }
-
-        // POST: POIs/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
-        {
-            POI pOI = db.POIs.Find(id);
-            db.POIs.Remove(pOI);
+            db.POIs.Add(poi);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            poiDTO.PoiID = poi.PoiID;
+            return CreatedAtRoute("DefaultApi", new { id = poiDTO.PoiID }, poiDTO);
+        }
+
+        // DELETE: api/POIs/5
+        [ResponseType(typeof(void))]
+        public IHttpActionResult DeletePOI(int id)
+        {
+            POI poi = db.POIs.Find(id);
+            if(poi == null)
+            {
+                return NotFound();
+            }
+
+            //if (poi.CheckNotOwner(User.Identity.GetUserId()))
+            //{
+            //    return StatusCode(HttpStatusCode.Unauthorized);
+            //}
+
+            db.POIs.Remove(poi);
+            db.SaveChanges();
+            return Ok();
+        }
+
+
+        private void copyToDto(POI poi, POIDTOReceive poiDto)
+        {
+            if (poiDto.Nome != null)
+            {
+                poi.Nome = poiDto.Nome;
+            }
+            if (poiDto.Descricao != null)
+            {
+                poi.Descricao = poiDto.Descricao;
+            }
+            Local local = db.Locals.Find(poiDto.LocalID);
+            if (local != null)
+            {
+                poi.LocalID = poiDto.LocalID;
+                poi.Local = local;
+            }
+            Categoria categoria = db.Categorias.Find(poiDto.CategoriaID);
+            if(categoria != null)
+            {
+                poi.CategoriaID = poiDto.CategoriaID;
+                poi.Categoria = categoria;
+            }
+            //poi.UserId = User.Identity.GetUserId();
+            //poi.User = db.Users.Find(poi.UserId);
+        }
+
+        private bool POIExists(int id)
+        {
+            return db.POIs.Count(e => e.PoiID == id) > 0;
         }
 
         protected override void Dispose(bool disposing)
