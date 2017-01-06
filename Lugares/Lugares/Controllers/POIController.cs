@@ -50,7 +50,7 @@ namespace Lugares.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Nome,Descricao,LocalID,Categoria")] POI pOI)
+        public ActionResult Create([Bind(Include = "Nome,Descricao,LocalID,CategoriaID,duracaoVisita")] POI pOI)
         {
             try
             {
@@ -61,7 +61,8 @@ namespace Lugares.Controllers
                     return RedirectToAction("Index");
                 }
 
-                //ViewBag.CategoriaID = new SelectList(db.Categorias, "ID", "Nome", pOI.CategoriaID);
+                ViewBag.LocalID = new SelectList(db.Locals, "LocalID", "LocalID");
+                ViewBag.CategoriaID = new SelectList(db.Categorias, "CategoriaID", "nome");
 
             }
             catch (DataException /* dex */)

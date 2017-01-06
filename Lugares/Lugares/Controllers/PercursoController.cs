@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using ClassLibrary.DAL;
 using ClassLibrary.Model;
+using ClassLibrary.ViewModels;
 
 namespace Lugares.Controllers
 {
@@ -69,7 +70,6 @@ namespace Lugares.Controllers
                 //Log the error (uncomment dex variable name and add a line here to write a log.
                 ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists see your system administrator.");
             }
-            
 
             return View(percurso);
         }
@@ -81,7 +81,7 @@ namespace Lugares.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Percurso percurso = db.Percursos.Find(id);
+            Percurso percurso = db.Percursos.Include(p => p.POIs).Where(p => p.PercursoID == id).SingleOrDefault();
             if (percurso == null)
             {
                 return HttpNotFound();
@@ -117,6 +117,23 @@ namespace Lugares.Controllers
                 }
             }
             return View(percursoToUpdate);
+        }
+
+        private void preencherPOIsPercurso(Percurso percurso)
+        {
+            var pois = db.POIs;
+            var POIsPercurso = new HashSet<int>(percurso.POIs.Select(p => p.PoiID));
+            var viewModel = new List<PercursoPoi>();
+            foreach(var poi in pois)
+            {
+                viewModel.Add(new PercursoPoi
+                {
+                    PercursoID =   percurso.PercursoID,          
+                    nome = percurso.Nome,
+                    POIdePercurso = POIsPercurso.Contains(percurso.PercursoID)
+                });
+            }
+            ViewBag.Pois = viewModel;
         }
 
         // GET: Percurso/Delete/5
