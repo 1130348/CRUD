@@ -365,3 +365,5 @@ C:\Users\Joel\Desktop\Projeto\Lugares\Lugares\obj\Debug\Lugares.dll
 C:\Users\Joel\Desktop\Projeto\Lugares\Lugares\obj\Debug\Lugares.pdb
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\obj\Debug\Lugares.Migrations.Initial.resources
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\obj\Debug\Lugares.csproj.GenerateResource.Cache
+C:\Users\Joel\Desktop\Projeto\Lugares\Lugares\obj\Debug\Lugares.Migrations.initial.resources
+C:\Users\Joel\Desktop\Projeto\Lugares\Lugares\obj\Debug\Lugares.csproj.GenerateResource.Cache

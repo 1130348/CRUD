@@ -40,7 +40,8 @@ namespace Lugares.Controllers
         // GET: POIs/Create
         public ActionResult Create()
         {
-            ViewBag.LocalID = new SelectList(db.Locals, "LocalID", "Nome");
+            ViewBag.LocalID = new SelectList(db.Locals,"LocalID","Nome");
+            ViewBag.CategoriaID = new SelectList(db.Categorias, "CategoriaID", "nome");
             return View();
         }
 

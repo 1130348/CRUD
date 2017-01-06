@@ -33,5 +33,6 @@ namespace ClassLibrary.DAL
             return new DatumContext();
         }
 
+        public System.Data.Entity.DbSet<ClassLibrary.Model.Categoria> Categorias { get; set; }
     }
 }

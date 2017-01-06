@@ -29,10 +29,14 @@ namespace Lugares.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Percurso percurso = db.Percursos.Find(id);
+            
             if (percurso == null)
             {
                 return HttpNotFound();
             }
+
+            var pois = db.Percursos.Where(p => p.PercursoID == id).SelectMany(c => c.POIs);
+
             return View(percurso);
         }
 
@@ -50,6 +54,7 @@ namespace Lugares.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Nome")] Percurso percurso)
         {
+
             try
             {
                 if (ModelState.IsValid)

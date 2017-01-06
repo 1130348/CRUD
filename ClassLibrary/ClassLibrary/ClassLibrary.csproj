@@ -67,6 +67,7 @@
     <Compile Include="DAL\DatumContext.cs" />
     <Compile Include="DAL\DatumInitializer.cs" />
     <Compile Include="Model\ApplicationUser.cs" />
+    <Compile Include="Model\Categoria.cs" />
     <Compile Include="Model\Hashtag.cs" />
     <Compile Include="Model\IdentityModels.cs" />
     <Compile Include="Model\Local.cs" />

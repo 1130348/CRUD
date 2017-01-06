@@ -9,6 +9,12 @@ namespace ClassLibrary.Model
 {
     public class POI
     {
+
+        public POI()
+        {
+            this.Percursos = new HashSet<Percurso> ();
+        }
+
         public int PoiID { get; set; }
         [Required(ErrorMessage = "No Name was chosen.")]
         public string Nome { get; set; }
@@ -16,7 +22,9 @@ namespace ClassLibrary.Model
         [ForeignKey("Local")]
         public int LocalID { get; set; }
         public virtual Local Local { get; set; }
-        public Categorias Categoria { get; set; }
+        public int CategoriaID { get; set; }
+        public virtual Categoria Categoria { get; set; }
+        public int duracaoVisita { get; set; }
         //[ForeignKey("Categoria")]
         //public int CategoriaID { get; set; }
         //public virtual Categoria Categoria { get; set; }
@@ -26,14 +34,6 @@ namespace ClassLibrary.Model
         //public virtual ApplicationUser User { get; set; }
         public virtual ICollection<Hashtag> Hashtags { get; set; }
         public virtual ICollection<Percurso> Percursos { get; set; }
-    }
-
-    public enum Categorias
-    {
-        Restauração,
-        Cultura,
-        Diversão,
-        Outros
     }
 
 }

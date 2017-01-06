@@ -215,6 +215,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CategoriaController.cs" />
     <Compile Include="Controllers\HashtagController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LocalController.cs" />
@@ -224,9 +225,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201701052031060_Initial.cs" />
-    <Compile Include="Migrations\201701052031060_Initial.Designer.cs">
-      <DependentUpon>201701052031060_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201701061008015_initial.cs" />
+    <Compile Include="Migrations\201701061008015_initial.Designer.cs">
+      <DependentUpon>201701061008015_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -331,6 +332,11 @@
     <Content Include="Views\Percurso\Details.cshtml" />
     <Content Include="Views\Percurso\Edit.cshtml" />
     <Content Include="Views\Percurso\Index.cshtml" />
+    <Content Include="Views\Categoria\Create.cshtml" />
+    <Content Include="Views\Categoria\Delete.cshtml" />
+    <Content Include="Views\Categoria\Details.cshtml" />
+    <Content Include="Views\Categoria\Edit.cshtml" />
+    <Content Include="Views\Categoria\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -346,8 +352,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201701052031060_Initial.resx">
-      <DependentUpon>201701052031060_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201701061008015_initial.resx">
+      <DependentUpon>201701061008015_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
