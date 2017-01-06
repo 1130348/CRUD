@@ -363,7 +363,7 @@ C:\Users\Joel\Desktop\Projeto\Lugares\Lugares\bin\System.Web.WebPages.Deployment
 C:\Users\Joel\Desktop\Projeto\Lugares\Lugares\bin\System.Web.WebPages.Razor.xml
 C:\Users\Joel\Desktop\Projeto\Lugares\Lugares\obj\Debug\Lugares.dll
 C:\Users\Joel\Desktop\Projeto\Lugares\Lugares\obj\Debug\Lugares.pdb
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\obj\Debug\Lugares.Migrations.Initial.resources
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\obj\Debug\Lugares.csproj.GenerateResource.Cache
 C:\Users\Joel\Desktop\Projeto\Lugares\Lugares\obj\Debug\Lugares.Migrations.initial.resources
 C:\Users\Joel\Desktop\Projeto\Lugares\Lugares\obj\Debug\Lugares.csproj.GenerateResource.Cache
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\obj\Debug\Lugares.Migrations.initial2.resources
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\obj\Debug\Lugares.csproj.GenerateResource.Cache

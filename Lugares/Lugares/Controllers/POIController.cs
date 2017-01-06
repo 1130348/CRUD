@@ -11,6 +11,7 @@ using ClassLibrary.Model;
 
 namespace Lugares.Controllers
 {
+    [Authorize(Roles ="Admin")]
     public class POIController : Controller
     {
         private DatumContext db = new DatumContext();

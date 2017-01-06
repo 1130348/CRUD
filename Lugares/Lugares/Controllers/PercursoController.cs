@@ -12,6 +12,7 @@ using ClassLibrary.ViewModels;
 
 namespace Lugares.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class PercursoController : Controller
     {
         private DatumContext db = new DatumContext();
