@@ -27,6 +27,33 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
+                <table>
+                    <tr>
+                        @{
+                            int cnt = 0;
+                            List<ClassLibrary.ViewModels.PercursoPoi> pois = ViewBag.POI;
+
+                            foreach(var poi in pois)
+                            {
+                                if(cnt++ % 3 == 0)
+                                {
+                                    @:</tr><tr>
+                                }
+                                @:<td>
+                                <input type="checkbox" name="selectedPois" value="@poi.PoiID"
+                                       @(Html.Raw(poi.POIdePercurso ? "checked=\"checked\"" : ""))/>
+                                       @poi.PoiID @: @poi.nome
+                                       
+                                @:</td>
+                            }
+                        }
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Save" class="btn btn-default" />
             </div>
         </div>

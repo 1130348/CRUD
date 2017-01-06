@@ -8,7 +8,7 @@ namespace ClassLibrary.ViewModels
 {
     public class PercursoPoi
     {
-        public int PercursoID { get; set; }
+        public int PoiID { get; set; }
         public String nome { get; set; }
         public bool POIdePercurso { get; set; }
     }

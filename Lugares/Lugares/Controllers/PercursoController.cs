@@ -82,6 +82,7 @@ namespace Lugares.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Percurso percurso = db.Percursos.Include(p => p.POIs).Where(p => p.PercursoID == id).SingleOrDefault();
+            preencherPOIsPercurso(percurso);
             if (percurso == null)
             {
                 return HttpNotFound();
@@ -119,6 +120,38 @@ namespace Lugares.Controllers
             return View(percursoToUpdate);
         }
 
+        private void atualizarPoisDoPercurso(Percurso percursoParaAtualizar, string [] selectedPois)
+        {
+            if(selectedPois == null)
+            {
+                percursoParaAtualizar.POIs = new List<POI>();
+                return;
+
+            }
+
+            var selectedPoisHS = new HashSet<string>(selectedPois);
+            var poisPercurso = new HashSet<int>(percursoParaAtualizar.POIs.Select(p => p.PoiID));
+
+            var pois = db.POIs;
+            foreach(var poi in pois)
+            {
+                if (selectedPoisHS.Contains(poi.PoiID.ToString()))
+                {
+                    if (!poisPercurso.Contains(poi.PoiID))
+                    {
+                        percursoParaAtualizar.POIs.Add(poi);
+                    }
+                }else
+                {
+                    if (poisPercurso.Contains(poi.PoiID))
+                    {
+                        percursoParaAtualizar.POIs.Remove(poi);
+                    }
+                }
+            }
+
+        }
+
         private void preencherPOIsPercurso(Percurso percurso)
         {
             var pois = db.POIs;
@@ -128,12 +161,12 @@ namespace Lugares.Controllers
             {
                 viewModel.Add(new PercursoPoi
                 {
-                    PercursoID =   percurso.PercursoID,          
-                    nome = percurso.Nome,
+                    PoiID =   poi.PoiID,          
+                    nome = poi.Nome,
                     POIdePercurso = POIsPercurso.Contains(percurso.PercursoID)
                 });
             }
-            ViewBag.Pois = viewModel;
+            ViewBag.POI = viewModel;
         }
 
         // GET: Percurso/Delete/5
