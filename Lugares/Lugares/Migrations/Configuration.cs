@@ -61,6 +61,7 @@
                 new POI { Nome = "Sealife Matosinhos", LocalID = 16, CategoriaID = 3, duracaoVisita = 120 },
                 new POI { Nome = "Livralia Lello", LocalID = 17, CategoriaID = 4, duracaoVisita = 40 }
                 );
+
             context.Categorias.AddOrUpdate(i => i.CategoriaID,
                 new Categoria { nome = "Desporto" },
                 new Categoria { nome = "Ar Livre" },
@@ -70,7 +71,9 @@
                 new Categoria { nome = "Teatro" }
                 );
 
-
+            context.SugerirPOI.AddOrUpdate(i => i.SugerirPoiID,
+                new SugerirPOI { Nome = "Estádio do Bessa", LocalID = 1, CategoriaID = 1, duracaoVisita = 45, UserID = 1 }
+                );
         }
     }
 }

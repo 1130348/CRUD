@@ -12,7 +12,7 @@ namespace ClassLibrary.Model
     public class SugerirPOI
     {
         [Key]
-        public int PoiID { get; set; }
+        public int SugerirPoiID { get; set; }
         public string Nome { get; set; }
         public string Descricao { get; set; }
         [ForeignKey("Local")]
