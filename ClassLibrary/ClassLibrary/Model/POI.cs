@@ -9,12 +9,6 @@ namespace ClassLibrary.Model
 {
     public class POI
     {
-
-        public POI()
-        {
-            this.Percursos = new HashSet<Percurso> ();
-        }
-
         public int PoiID { get; set; }
         [Required(ErrorMessage = "No Name was chosen.")]
         public string Nome { get; set; }

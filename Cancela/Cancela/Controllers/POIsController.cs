@@ -140,12 +140,12 @@ namespace Cancela.Controllers
                 poi.LocalID = poiDto.LocalID;
                 poi.Local = local;
             }
-            //Categoria categoria = db.Categorias.Find(poiDto.CategoriaID);
-            //if(categoria != null)
-            //{
-            //    poi.CategoriaID = poiDto.CategoriaID;
-            //    poi.Categoria = categoria;
-            //}
+            Categoria categoria = db.Categorias.Find(poiDto.CategoriaID);
+            if (categoria != null)
+            {
+                poi.CategoriaID = poiDto.CategoriaID;
+                poi.Categoria = categoria;
+            }
             //poi.UserId = User.Identity.GetUserId();
             //poi.User = db.Users.Find(poi.UserId);
         }

@@ -41,9 +41,9 @@
                  );
 
             context.POIs.AddOrUpdate(i => i.PoiID,
-                new POI { Nome = "Estádio do Dragão",LocalID = 1, CategoriaID = 1, duracaoVisita = 45 },
+                new POI { Nome = "Estádio do Dragão", LocalID = 1, CategoriaID = 1, duracaoVisita = 45 },
                 new POI { Nome = "Casa da Música", LocalID = 2, CategoriaID = 5, duracaoVisita = 35 },
-                new POI { Nome= "Torre dos Clérigos", LocalID=7, CategoriaID = 4, duracaoVisita = 15 },
+                new POI { Nome = "Torre dos Clérigos", LocalID = 7, CategoriaID = 4, duracaoVisita = 15 },
                 new POI { Nome = "Estação Ferroviária de Porto São Bento", LocalID = 8, CategoriaID = 4, duracaoVisita = 30 },
                 new POI { Nome = "Sé do Porto", LocalID = 9, CategoriaID = 4, duracaoVisita = 25 },
                 new POI { Nome = "Palácio da Bolsa", LocalID = 10, CategoriaID = 3, duracaoVisita = 33 },
@@ -53,7 +53,7 @@
                 new POI { Nome = "Coliseu do Porto", LocalID = 4, CategoriaID = 6, duracaoVisita = 19 },
                 new POI { Nome = "Palácio de Cristal", LocalID = 5, CategoriaID = 4, duracaoVisita = 29 },
                 new POI { Nome = "Casa do Infante", LocalID = 6, CategoriaID = 3, duracaoVisita = 15 },
-                new POI { Nome = "Alfandega do Porto", LocalID =11, CategoriaID = 4, duracaoVisita = 10 },
+                new POI { Nome = "Alfandega do Porto", LocalID = 11, CategoriaID = 4, duracaoVisita = 10 },
                 new POI { Nome = "Teatro Rivoli", LocalID = 12, CategoriaID = 6, duracaoVisita = 26 },
                 new POI { Nome = "Rotunda da Boavista", LocalID = 13, CategoriaID = 2, duracaoVisita = 10 },
                 new POI { Nome = "Mercado Ferreira Borges", LocalID = 14, CategoriaID = 2, duracaoVisita = 30 },
@@ -62,7 +62,7 @@
                 new POI { Nome = "Livralia Lello", LocalID = 17, CategoriaID = 4, duracaoVisita = 40 }
                 );
             context.Categorias.AddOrUpdate(i => i.CategoriaID,
-                new Categoria { nome = "Desporto"},
+                new Categoria { nome = "Desporto" },
                 new Categoria { nome = "Ar Livre" },
                 new Categoria { nome = "Museus" },
                 new Categoria { nome = "História" },
@@ -70,7 +70,6 @@
                 new Categoria { nome = "Teatro" }
                 );
 
-            
 
         }
     }

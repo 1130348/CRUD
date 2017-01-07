@@ -73,9 +73,10 @@
     <Compile Include="Model\Local.cs" />
     <Compile Include="Model\Percurso.cs" />
     <Compile Include="Model\POI.cs" />
-    <Compile Include="Model\POIDTO.cs" />
-    <Compile Include="Model\POIDTOReceive.cs" />
-    <Compile Include="Model\POIDTOSend.cs" />
+    <Compile Include="Model\POIDTO\POIDTO.cs" />
+    <Compile Include="Model\POIDTO\POIDTOReceive.cs" />
+    <Compile Include="Model\POIDTO\POIDTOSend.cs" />
+    <Compile Include="Model\SugerirPOI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\PercursoPoi.cs" />
   </ItemGroup>

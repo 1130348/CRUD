@@ -262,6 +262,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\POIsController.cs" />
+    <Compile Include="Controllers\SugerirPOIsController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -354,6 +355,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\POIs\" />
+    <Folder Include="Views\SugerirPOIs\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Project_Readme.html" />

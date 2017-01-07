@@ -22,6 +22,7 @@ namespace ClassLibrary.DAL
         public DbSet<POI> POIs { get; set; }
         public DbSet<Hashtag> Hashtags { get; set; }
         public DbSet<Percurso> Percursos { get; set; }
+        public DbSet<SugerirPOI> SugerirPOI { get; set; }
 
         //protected override void OnModelCreating(DbModelBuilder modelBuilder)
         //{
