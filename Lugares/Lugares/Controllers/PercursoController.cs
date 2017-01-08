@@ -38,7 +38,7 @@ namespace Lugares.Controllers
             }
 
             var pois = db.Percursos.Where(p => p.PercursoID == id).SelectMany(c => c.POIs);
-
+            ViewBag.PercursoPOIs = pois;
             return View(percurso);
         }
 
@@ -96,7 +96,7 @@ namespace Lugares.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost, ActionName("Edit")]
         [ValidateAntiForgeryToken]
-        public ActionResult EditPost(int? id)
+        public ActionResult EditPost(int? id, string [] selectedPois)
         {
             if (id == null)
             {
@@ -108,6 +108,9 @@ namespace Lugares.Controllers
             {
                 try
                 {
+
+                    atualizarPoisDoPercurso(percursoToUpdate, selectedPois);
+
                     db.SaveChanges();
 
                     return RedirectToAction("Index");
@@ -118,6 +121,8 @@ namespace Lugares.Controllers
                     ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
                 }
             }
+            preencherPOIsPercurso(percursoToUpdate);
+            ViewBag.POI = new SelectList(db.POIs, "PoiID", "Nome");
             return View(percursoToUpdate);
         }
 

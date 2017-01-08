@@ -31,8 +31,7 @@
                 {
                     <tr>
                         <td>
-                            @*@Html.DisplayNameFor(modelItem => item.Nome)*@
-                            @Html.DropDownList("POI", (MultiSelectList)ViewBag.PercursoPOIs, htmlAttributes: new { multiple = "multiple" })
+                            @Html.DisplayFor(modelItem => item.Nome)
                         </td>
                     </tr>
                 }

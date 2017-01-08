@@ -159,6 +159,96 @@ namespace Lugares.Controllers
             return RedirectToAction("Index");
         }
 
+        public ActionResult Validate()
+        {
+            var sugestoes = db.SugerirPOI;
+            return View(sugestoes.ToList());
+        }
+
+        public ActionResult DetailsValidate(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            SugerirPOI sugerirPOI = db.SugerirPOI.Find(id);
+            if (sugerirPOI == null)
+            {
+                return HttpNotFound();
+            }
+            return View(sugerirPOI);
+        }
+
+        public ActionResult DeleteValidate(int? id, bool? saveChangesError = false)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            if (saveChangesError.GetValueOrDefault())
+            {
+                ViewBag.ErrorMessage = "Delete failed. Try again, and if the problem persists see your system administrator.";
+            }
+            SugerirPOI sugerirPOI = db.SugerirPOI.Find(id);
+            if (sugerirPOI == null)
+            {
+                return HttpNotFound();
+            }
+            return View(sugerirPOI);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteValidate(int id)
+        {
+            try
+            {
+                SugerirPOI sugerirPOItoDelete = new SugerirPOI() { SugerirPoiID = id };
+                db.Entry(sugerirPOItoDelete).State = EntityState.Deleted;
+                db.SaveChanges();
+            }
+            catch (DataException/* dex */)
+            {
+                //Log the error (uncomment dex variable name and add a line here to write a log.
+                return RedirectToAction("Delete", new { id = id, saveChangesError = true });
+            }
+            return RedirectToAction("Validate");
+        }
+
+        public ActionResult AproveValidate(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            SugerirPOI sugerirPOI = db.SugerirPOI.Find(id);
+            try
+            {
+
+                if (ModelState.IsValid)
+                {                    
+                    POI pOI = new POI();
+                    pOI.Nome = sugerirPOI.Nome;
+                    pOI.Descricao = sugerirPOI.Descricao;
+                    pOI.LocalID = sugerirPOI.LocalID;
+                    pOI.CategoriaID = sugerirPOI.CategoriaID;
+                    pOI.duracaoVisita = sugerirPOI.duracaoVisita;
+                    db.POIs.Add(pOI);
+                    db.Entry(sugerirPOI).State = EntityState.Deleted;
+                    db.SaveChanges();
+                    return RedirectToAction("Validate");
+                }
+
+            }
+            catch (DataException /* dex */)
+            {
+                //Log the error (uncomment dex variable name and add a line here to write a log.
+                ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists see your system administrator.");
+            }
+
+            return View(sugerirPOI);
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)

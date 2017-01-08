@@ -224,9 +224,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201701071920455_initial.cs" />
-    <Compile Include="Migrations\201701071920455_initial.Designer.cs">
-      <DependentUpon>201701071920455_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201701081512221_initial.cs" />
+    <Compile Include="Migrations\201701081512221_initial.Designer.cs">
+      <DependentUpon>201701081512221_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -331,6 +331,10 @@
     <Content Include="Views\Categoria\Details.cshtml" />
     <Content Include="Views\Categoria\Edit.cshtml" />
     <Content Include="Views\Categoria\Index.cshtml" />
+    <Content Include="Views\POI\Validate.cshtml" />
+    <Content Include="Views\POI\DetailsValidate.cshtml" />
+    <Content Include="Views\POI\DeleteValidate.cshtml" />
+    <Content Include="Views\POI\AproveValidate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -346,8 +350,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201701071920455_initial.resx">
-      <DependentUpon>201701071920455_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201701081512221_initial.resx">
+      <DependentUpon>201701081512221_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
