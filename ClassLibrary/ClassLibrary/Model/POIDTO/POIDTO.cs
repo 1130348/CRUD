@@ -11,5 +11,7 @@ namespace ClassLibrary.Model
         public int PoiID { get; set; }
         public string Nome { get; set; }
         public string Descricao { get; set; }
+        public int duracaoVisita { get; set; }
+
     }
 }

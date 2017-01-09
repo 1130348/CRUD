@@ -19,13 +19,6 @@ namespace ClassLibrary.Model
         public int CategoriaID { get; set; }
         public virtual Categoria Categoria { get; set; }
         public int duracaoVisita { get; set; }
-        //[ForeignKey("Categoria")]
-        //public int CategoriaID { get; set; }
-        //public virtual Categoria Categoria { get; set; }
-        //public string UserId { get; set; }
-        //[ForeignKey("UserId")]
-        //[Editable(false)]
-        //public virtual ApplicationUser User { get; set; }
         public virtual ICollection<Hashtag> Hashtags { get; set; }
         public virtual ICollection<Percurso> Percursos { get; set; }
     }

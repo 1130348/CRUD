@@ -22,6 +22,9 @@
         <th>
             @Html.DisplayNameFor(model => model.Categoria)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.duracaoVisita)
+        </th>
         <th></th>
     </tr>
 
@@ -37,11 +40,13 @@
             @Html.DisplayFor(modelItem => item.Categoria.nome)
         </td>
         <td>
+            @Html.DisplayFor(modelItem => item.duracaoVisita)
+        </td>
+        <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.PoiID }) |
             @Html.ActionLink("Details", "Details", new { id=item.PoiID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.PoiID })
         </td>
     </tr>
 }
-
 </table>

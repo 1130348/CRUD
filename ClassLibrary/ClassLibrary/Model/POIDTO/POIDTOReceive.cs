@@ -13,6 +13,10 @@ namespace ClassLibrary.Model
         public int LocalID { get; set; }
         [ForeignKey("Categoria")]
         public int CategoriaID { get; set; }
+        public POIDTOReceive()
+        {
+
+        }
         public POIDTOReceive(POI poi)
         {
             this.PoiID = poi.PoiID;

@@ -13,7 +13,6 @@ namespace ClassLibrary.Model
         {
             this.POIs = new HashSet<POI>();
         }
-
         public int PercursoID { get; set; }
         public String Nome { get; set; }
         public String Descricao { get; set; }

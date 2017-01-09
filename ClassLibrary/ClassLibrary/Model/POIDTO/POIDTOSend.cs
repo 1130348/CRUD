@@ -3,23 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ClassLibrary.DAL;
 
 namespace ClassLibrary.Model
 {
     public class POIDTOSend : POIDTO
     {
-        public virtual Local local { get; set; }
-        public virtual Categoria categoria { get; set; }
-        //public string Username;
+        public string local { get; set; }
+        public string categoria { get; set; }
 
+        public POIDTOSend()
+        {
+
+        }
         public POIDTOSend(POI poi)
         {
             this.PoiID = poi.PoiID;
             this.Nome = poi.Nome;
             this.Descricao = poi.Descricao;
-            this.local = poi.Local;
-            this.categoria = poi.Categoria;
-            //this.Username = poi.User.Username;
+            DatumContext db = new DatumContext();
+            this.local = db.Locals.Find(poi.LocalID).Nome;
+            this.categoria = db.Categorias.Find(poi.CategoriaID).nome;
+            this.duracaoVisita = poi.duracaoVisita;
+            
         }
     }
 }
