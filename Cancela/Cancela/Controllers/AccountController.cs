@@ -16,6 +16,7 @@ using Microsoft.Owin.Security.OAuth;
 using Cancela.Models;
 using Cancela.Providers;
 using Cancela.Results;
+using System.Linq;
 
 namespace Cancela.Controllers
 {
@@ -371,6 +372,19 @@ namespace Cancela.Controllers
                 return GetErrorResult(result); 
             }
             return Ok();
+        }
+
+        public List<KeyValuePair<string,string>> GetUsers()
+        {
+            var context = new ApplicationDbContext();
+            var list = new List<KeyValuePair<string, string>>();
+            int i = 0;
+            foreach(var user in context.Users)
+            {
+                list.Insert(i, new KeyValuePair<string, string>(user.Id, user.Email));
+                i++;
+            }
+            return list;
         }
 
         protected override void Dispose(bool disposing)
