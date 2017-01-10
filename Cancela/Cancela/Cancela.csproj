@@ -262,6 +262,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HashtagsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LocalsController.cs" />
     <Compile Include="Controllers\PercursoesController.cs" />
     <Compile Include="Controllers\POIsController.cs" />
     <Compile Include="Controllers\SugerirPOIsController.cs" />
