@@ -29,8 +29,8 @@ namespace ClassLibrary.DAL
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             //modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-            modelBuilder.Entity<POI>().HasMany(c => c.Hashtags).WithMany(i => i.POIs).
-                Map(t => t.MapLeftKey("PoiID").MapRightKey("Nome").ToTable("HashTag_POI"));
+            //modelBuilder.Entity<POI>().HasMany(c => c.Hashtags).WithMany(i => i.POIs).
+            //    Map(t => t.MapLeftKey("PoiID").MapRightKey("Nome").ToTable("HashTag_POI"));
         }
 
         public static DatumContext Create()

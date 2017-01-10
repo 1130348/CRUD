@@ -79,7 +79,11 @@
     <Compile Include="Model\SugerirPOI.cs" />
     <Compile Include="Model\Visita.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\HashTagModel.cs" />
+    <Compile Include="ViewModels\Hashtag_POI.cs" />
+    <Compile Include="ViewModels\PercursoModel.cs" />
     <Compile Include="ViewModels\PercursoPoi.cs" />
+    <Compile Include="ViewModels\VisitaModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

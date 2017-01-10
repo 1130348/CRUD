@@ -11,6 +11,7 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using ClassLibrary.DAL;
 using ClassLibrary.Model;
+using ClassLibrary.ViewModels;
 
 namespace Cancela.Controllers
 {
@@ -19,22 +20,34 @@ namespace Cancela.Controllers
         private DatumContext db = new DatumContext();
 
         // GET: api/Hashtags
-        public IQueryable<Hashtag> GetHashtags()
+        public IEnumerable<HashTagModel> GetHashtags()
         {
-            return db.Hashtags;
+            IEnumerable<Hashtag> hashList = db.Hashtags.ToList();
+            List<HashTagModel> newHashList = new List<HashTagModel>();
+
+            foreach (var hash in hashList)
+            {
+                Hashtag newHashtag = db.Hashtags.Include(l => l.POIs).Where(l => l.ID == hash.ID).SingleOrDefault();
+                HashTagModel newMdl = new HashTagModel(hash);
+                newHashList.Add(newMdl);
+            }
+
+            return newHashList;
         }
 
         // GET: api/Hashtags/5
-        [ResponseType(typeof(Hashtag))]
-        public async Task<IHttpActionResult> GetHashtag(int id)
+        [ResponseType(typeof(HashTagModel))]
+        public IHttpActionResult GetHashtag(int id)
         {
-            Hashtag hashtag = await db.Hashtags.FindAsync(id);
+            Hashtag hashtag= db.Hashtags.Include(l => l.POIs).Where(l => l.ID == id).SingleOrDefault();
+
             if (hashtag == null)
             {
                 return NotFound();
             }
+            HashTagModel newMdlHash = new HashTagModel(hashtag);
 
-            return Ok(hashtag);
+            return Ok(newMdlHash);
         }
 
         // PUT: api/Hashtags/5
@@ -74,18 +87,51 @@ namespace Cancela.Controllers
 
         // POST: api/Hashtags
         [ResponseType(typeof(Hashtag))]
-        public async Task<IHttpActionResult> PostHashtag(Hashtag hashtag)
+        public IHttpActionResult PostHashtag(Hashtag hashtag,List<int> poi)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
-
+            Hashtag hashtagUpdate = db.Hashtags.Find(hashtag.ID);
+            atualizarPoiDoHashTag(hashtagUpdate, poi);
             db.Hashtags.Add(hashtag);
-            await db.SaveChangesAsync();
+            db.SaveChanges();
 
             return CreatedAtRoute("DefaultApi", new { id = hashtag.ID }, hashtag);
         }
+
+        private void atualizarPoiDoHashTag(Hashtag hashtagParaAtualizar, List<int> selectedPOI)
+        {
+            if (selectedPOI==null)
+            {
+                hashtagParaAtualizar.POIs = new List<POI>();
+                return;
+            }
+            var selectedPoiHS = new HashSet<int>(selectedPOI);
+            var poiHashtag = new HashSet<int>(hashtagParaAtualizar.POIs.Select(a => a.PoiID));
+
+            var POIs = db.POIs;
+            foreach (var poi in POIs)
+            {
+                 if (selectedPoiHS.Contains(poi.PoiID))
+                    {
+                
+                        if (!poiHashtag.Contains(poi.PoiID))
+                        {
+                            hashtagParaAtualizar.POIs.Add(poi);
+                       }
+                    }
+                    else
+                    {
+                        if (poiHashtag.Contains(poi.PoiID))
+                       {
+                           hashtagParaAtualizar.POIs.Remove(poi);
+                       }
+                    }
+                }
+            }
+        
 
         // DELETE: api/Hashtags/5
         [ResponseType(typeof(Hashtag))]

@@ -11,6 +11,7 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using ClassLibrary.DAL;
 using ClassLibrary.Model;
+using ClassLibrary.ViewModels;
 
 namespace Cancela.Controllers
 {
@@ -19,22 +20,49 @@ namespace Cancela.Controllers
         private DatumContext db = new DatumContext();
 
         // GET: api/Percursoes
-        public IQueryable<Percurso> GetPercursos()
+        public IEnumerable<PercursoModel> GetPercursos()
         {
-            return db.Percursos;
+            IEnumerable<Percurso> percursoList = db.Percursos.ToList();
+            List<PercursoModel> newPercursoList = new List<PercursoModel>();
+
+            foreach (var percurso in percursoList)
+            {
+                Percurso newPercurso = db.Percursos.Include(l => l.POIs).Where(l => l.PercursoID == percurso.PercursoID).SingleOrDefault();
+                if (newPercurso != null)
+                {
+                    PercursoModel newMdl = new PercursoModel(newPercurso);
+                
+                 if (newMdl != null)
+                    {
+                       newPercursoList.Add(newMdl);
+                    }
+                }
+            }
+
+            return newPercursoList;
         }
 
         // GET: api/Percursoes/5
-        [ResponseType(typeof(Percurso))]
-        public async Task<IHttpActionResult> GetPercurso(int id)
+        [ResponseType(typeof(PercursoModel))]
+        public IHttpActionResult GetPercurso(int id)
         {
-            Percurso percurso = await db.Percursos.FindAsync(id);
+            Percurso percurso =  db.Percursos.Find(id);
             if (percurso == null)
             {
                 return NotFound();
             }
+            Percurso newPercurso = db.Percursos.Include(l => l.POIs).Where(l => l.PercursoID == percurso.PercursoID).SingleOrDefault();
+            if (newPercurso == null)
+            {
+                return NotFound();
+            }
+            PercursoModel newMdlPercurso = new PercursoModel(newPercurso);
+            if (newMdlPercurso == null)
+            {
+                return NotFound();
+            }
 
-            return Ok(percurso);
+            return Ok(newMdlPercurso);
         }
 
         // PUT: api/Percursoes/5

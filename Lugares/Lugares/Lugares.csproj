@@ -224,13 +224,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201701090337250_initial1.cs" />
-    <Compile Include="Migrations\201701090337250_initial1.Designer.cs">
-      <DependentUpon>201701090337250_initial1.cs</DependentUpon>
+    <Compile Include="Migrations\201701091428517_initial.cs" />
+    <Compile Include="Migrations\201701091428517_initial.Designer.cs">
+      <DependentUpon>201701091428517_initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201701090345285_initial2.cs" />
-    <Compile Include="Migrations\201701090345285_initial2.Designer.cs">
-      <DependentUpon>201701090345285_initial2.cs</DependentUpon>
+    <Compile Include="Migrations\201701091431141_initial1.cs" />
+    <Compile Include="Migrations\201701091431141_initial1.Designer.cs">
+      <DependentUpon>201701091431141_initial1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701091544389_initial3.cs" />
+    <Compile Include="Migrations\201701091544389_initial3.Designer.cs">
+      <DependentUpon>201701091544389_initial3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701100034047_insertVisita.cs" />
+    <Compile Include="Migrations\201701100034047_insertVisita.Designer.cs">
+      <DependentUpon>201701100034047_insertVisita.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -354,11 +362,17 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201701090337250_initial1.resx">
-      <DependentUpon>201701090337250_initial1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201701091428517_initial.resx">
+      <DependentUpon>201701091428517_initial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201701090345285_initial2.resx">
-      <DependentUpon>201701090345285_initial2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201701091431141_initial1.resx">
+      <DependentUpon>201701091431141_initial1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701091544389_initial3.resx">
+      <DependentUpon>201701091544389_initial3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701100034047_insertVisita.resx">
+      <DependentUpon>201701100034047_insertVisita.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
