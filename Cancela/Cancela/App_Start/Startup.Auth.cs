@@ -10,6 +10,7 @@ using Microsoft.Owin.Security.OAuth;
 using Owin;
 using Cancela.Providers;
 using Cancela.Models;
+using ClassLibrary.Models;
 
 namespace Cancela
 {

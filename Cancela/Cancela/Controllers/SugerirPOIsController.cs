@@ -2,127 +2,105 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Net;
-using System.Web;
-using System.Web.Mvc;
+using System.Net.Http;
+using System.Threading.Tasks;
+using System.Web.Http;
+using System.Web.Http.Description;
 using ClassLibrary.DAL;
 using ClassLibrary.Model;
 
 namespace Cancela.Controllers
 {
-    public class SugerirPOIsController : Controller
+    public class SugerirPOIsController : ApiController
     {
         private DatumContext db = new DatumContext();
 
-        // GET: SugerirPOIs
-        public ActionResult Index()
+        // GET: api/SugerirPOIs
+        public IQueryable<SugerirPOI> GetSugerirPOI()
         {
-            var sugerirPOI = db.SugerirPOI.Include(s => s.Categoria).Include(s => s.Local);
-            return View(sugerirPOI.ToList());
+            return db.SugerirPOI;
         }
 
-        // GET: SugerirPOIs/Details/5
-        public ActionResult Details(int? id)
+        // GET: api/SugerirPOIs/5
+        [ResponseType(typeof(SugerirPOI))]
+        public async Task<IHttpActionResult> GetSugerirPOI(int id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            SugerirPOI sugerirPOI = db.SugerirPOI.Find(id);
+            SugerirPOI sugerirPOI = await db.SugerirPOI.FindAsync(id);
             if (sugerirPOI == null)
             {
-                return HttpNotFound();
+                return NotFound();
             }
-            return View(sugerirPOI);
+
+            return Ok(sugerirPOI);
         }
 
-        // GET: SugerirPOIs/Create
-        public ActionResult Create()
+        // PUT: api/SugerirPOIs/5
+        [ResponseType(typeof(void))]
+        public async Task<IHttpActionResult> PutSugerirPOI(int id, SugerirPOI sugerirPOI)
         {
-            ViewBag.CategoriaID = new SelectList(db.Categorias, "CategoriaID", "nome");
-            ViewBag.LocalID = new SelectList(db.Locals, "LocalID", "Nome");
-            return View();
-        }
-
-        // POST: SugerirPOIs/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "PoiID,Nome,Descricao,LocalID,CategoriaID,duracaoVisita,UserID")] SugerirPOI sugerirPOI)
-        {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                db.SugerirPOI.Add(sugerirPOI);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                return BadRequest(ModelState);
             }
 
-            ViewBag.CategoriaID = new SelectList(db.Categorias, "CategoriaID", "nome", sugerirPOI.CategoriaID);
-            ViewBag.LocalID = new SelectList(db.Locals, "LocalID", "Nome", sugerirPOI.LocalID);
-            return View(sugerirPOI);
+            if (id != sugerirPOI.SugerirPoiID)
+            {
+                return BadRequest();
+            }
+
+            db.Entry(sugerirPOI).State = EntityState.Modified;
+
+            try
+            {
+                await db.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!SugerirPOIExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // GET: SugerirPOIs/Edit/5
-        public ActionResult Edit(int? id)
+        // POST: api/SugerirPOIs
+        [ResponseType(typeof(SugerirPOI))]
+        public async Task<IHttpActionResult> PostSugerirPOI(SugerirPOI sugerirPOI)
         {
-            if (id == null)
+            if (!ModelState.IsValid)
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                return BadRequest(ModelState);
             }
-            SugerirPOI sugerirPOI = db.SugerirPOI.Find(id);
+
+            db.SugerirPOI.Add(sugerirPOI);
+            await db.SaveChangesAsync();
+
+            return CreatedAtRoute("DefaultApi", new { id = sugerirPOI.SugerirPoiID }, sugerirPOI);
+        }
+
+        // DELETE: api/SugerirPOIs/5
+        [ResponseType(typeof(SugerirPOI))]
+        public async Task<IHttpActionResult> DeleteSugerirPOI(int id)
+        {
+            SugerirPOI sugerirPOI = await db.SugerirPOI.FindAsync(id);
             if (sugerirPOI == null)
             {
-                return HttpNotFound();
+                return NotFound();
             }
-            ViewBag.CategoriaID = new SelectList(db.Categorias, "CategoriaID", "nome", sugerirPOI.CategoriaID);
-            ViewBag.LocalID = new SelectList(db.Locals, "LocalID", "Nome", sugerirPOI.LocalID);
-            return View(sugerirPOI);
-        }
 
-        // POST: SugerirPOIs/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "PoiID,Nome,Descricao,LocalID,CategoriaID,duracaoVisita,UserID")] SugerirPOI sugerirPOI)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Entry(sugerirPOI).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            ViewBag.CategoriaID = new SelectList(db.Categorias, "CategoriaID", "nome", sugerirPOI.CategoriaID);
-            ViewBag.LocalID = new SelectList(db.Locals, "LocalID", "Nome", sugerirPOI.LocalID);
-            return View(sugerirPOI);
-        }
-
-        // GET: SugerirPOIs/Delete/5
-        public ActionResult Delete(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            SugerirPOI sugerirPOI = db.SugerirPOI.Find(id);
-            if (sugerirPOI == null)
-            {
-                return HttpNotFound();
-            }
-            return View(sugerirPOI);
-        }
-
-        // POST: SugerirPOIs/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
-        {
-            SugerirPOI sugerirPOI = db.SugerirPOI.Find(id);
             db.SugerirPOI.Remove(sugerirPOI);
-            db.SaveChanges();
-            return RedirectToAction("Index");
+            await db.SaveChangesAsync();
+
+            return Ok(sugerirPOI);
         }
 
         protected override void Dispose(bool disposing)
@@ -132,6 +110,11 @@ namespace Cancela.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        private bool SugerirPOIExists(int id)
+        {
+            return db.SugerirPOI.Count(e => e.SugerirPoiID == id) > 0;
         }
     }
 }

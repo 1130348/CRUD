@@ -23,6 +23,6 @@ namespace ClassLibrary.Model
         public int duracaoVisita { get; set; }
         public virtual ICollection<Hashtag> Hashtags { get; set; }
         public virtual ICollection<Percurso> Percursos { get; set; }
-        public int UserID { get; set; }
+        public int UserCreator { get; set; }
     }
 }

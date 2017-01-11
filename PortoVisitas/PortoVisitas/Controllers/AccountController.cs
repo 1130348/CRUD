@@ -9,6 +9,10 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using PortoVisitas.Models;
+using PortoVisitas.Helper;
+using System.Net.Http;
+using Newtonsoft.Json;
+using System.Net;
 
 namespace PortoVisitas.Controllers
 {
@@ -22,7 +26,7 @@ namespace PortoVisitas.Controllers
         {
         }
 
-        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
+        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
         {
             UserManager = userManager;
             SignInManager = signInManager;
@@ -34,9 +38,9 @@ namespace PortoVisitas.Controllers
             {
                 return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
             }
-            private set 
-            { 
-                _signInManager = value; 
+            private set
+            {
+                _signInManager = value;
             }
         }
 
@@ -73,21 +77,37 @@ namespace PortoVisitas.Controllers
                 return View(model);
             }
 
-            // This doesn't count login failures towards account lockout
-            // To enable password failures to trigger account lockout, change to shouldLockout: true
-            var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
-            switch (result)
+            try
             {
-                case SignInStatus.Success:
-                    return RedirectToLocal(returnUrl);
-                case SignInStatus.LockedOut:
-                    return View("Lockout");
-                case SignInStatus.RequiresVerification:
-                    return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
-                case SignInStatus.Failure:
-                default:
-                    ModelState.AddModelError("", "Invalid login attempt.");
-                    return View(model);
+                var client = WebApiHttpClient.GetClient();
+                string username = model.Email;
+                string password = model.Password;
+                HttpContent content = new StringContent(
+                "grant_type=password&username=" + username + "&password=" + password,
+                System.Text.Encoding.UTF8,
+                "application/x-www-form-urlencoded");
+                var response = await client.PostAsync("/Token", content);
+                if (response.IsSuccessStatusCode)
+                {
+                    //string contentResponse = await response.Content.ReadAsStringAsync();
+                    //return Content(contentResponse);
+                    TokenResponse tokenResponse =
+                    await response.Content.ReadAsAsync<TokenResponse>();
+                    WebApiHttpClient.storeToken(tokenResponse);
+                    //return Content(tokenResponse.AccessToken);
+
+                    return RedirectToAction("Index", "Home");
+
+
+                }
+                else
+                {
+                    return Content("Ocorreu um erro: " + response.StatusCode);
+                }
+            }
+            catch
+            {
+                return Content("Ocorreu um erro.");
             }
         }
 
@@ -120,7 +140,7 @@ namespace PortoVisitas.Controllers
             // If a user enters incorrect codes for a specified amount of time then the user account 
             // will be locked out for a specified amount of time. 
             // You can configure the account lockout settings in IdentityConfig
-            var result = await SignInManager.TwoFactorSignInAsync(model.Provider, model.Code, isPersistent:  model.RememberMe, rememberBrowser: model.RememberBrowser);
+            var result = await SignInManager.TwoFactorSignInAsync(model.Provider, model.Code, isPersistent: model.RememberMe, rememberBrowser: model.RememberBrowser);
             switch (result)
             {
                 case SignInStatus.Success:
@@ -151,23 +171,34 @@ namespace PortoVisitas.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
-                var result = await UserManager.CreateAsync(user, model.Password);
-                if (result.Succeeded)
+                var data = new
                 {
-                    await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
-                    
-                    // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771
-                    // Send an email with this link
-                    // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
-                    // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
-                    // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
+                    Email = model.Email,
+                    Password = model.Password,
+                    ConfirmPassword = model.Password
+                };
 
-                    return RedirectToAction("Index", "Home");
+                try
+                {
+                    var client = WebApiHttpClient.GetClient();
+                    string dataJSON = JsonConvert.SerializeObject(data);
+                    HttpContent content = new StringContent(dataJSON, System.Text.Encoding.Unicode, "application/json");
+                    //ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
+                    var response = await client.PostAsync("api/Account/Register", content);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
+                    else
+                    {
+                        return Content("Ocorreu um erro: " + response.RequestMessage);
+                    }
                 }
-                AddErrors(result);
+                catch
+                {
+                    return Content("Ocorreu um erro.");
+                }
             }
-
             // If we got this far, something failed, redisplay form
             return View(model);
         }

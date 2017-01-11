@@ -16,7 +16,7 @@ using Microsoft.Owin.Security.OAuth;
 using Cancela.Models;
 using Cancela.Providers;
 using Cancela.Results;
-using System.Linq;
+using ClassLibrary.Models;
 
 namespace Cancela.Controllers
 {
@@ -260,10 +260,8 @@ namespace Cancela.Controllers
             {
                 Authentication.SignOut(DefaultAuthenticationTypes.ExternalCookie);
                 
-                 ClaimsIdentity oAuthIdentity = await user.GenerateUserIdentityAsync(UserManager,
-                    OAuthDefaults.AuthenticationType);
-                ClaimsIdentity cookieIdentity = await user.GenerateUserIdentityAsync(UserManager,
-                    CookieAuthenticationDefaults.AuthenticationType);
+                ClaimsIdentity oAuthIdentity = await user.GenerateUserIdentityAsync(UserManager);
+                ClaimsIdentity cookieIdentity = await user.GenerateUserIdentityAsync(UserManager);
 
                 AuthenticationProperties properties = ApplicationOAuthProvider.CreateProperties(user.UserName);
                 Authentication.SignIn(properties, oAuthIdentity, cookieIdentity);
