@@ -9,7 +9,7 @@ namespace ClassLibrary.Model
 {
     public class POIDTOSend : POIDTO
     {
-        public int LocalID { get; set; }
+        public string local { get; set; }
         public string categoria { get; set; }
 
         public POIDTOSend()
@@ -22,7 +22,7 @@ namespace ClassLibrary.Model
             this.Nome = poi.Nome;
             this.Descricao = poi.Descricao;
             DatumContext db = new DatumContext();
-            this.LocalID = db.Locals.Find(poi.LocalID).LocalID;
+            this.local = db.Locals.Find(poi.LocalID).Nome;
             this.categoria = db.Categorias.Find(poi.CategoriaID).nome;
             this.duracaoVisita = poi.duracaoVisita;
             
