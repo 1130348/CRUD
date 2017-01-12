@@ -216,6 +216,7 @@
     <Compile Include="Controllers\HashtagsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PercursoesController.cs" />
     <Compile Include="Controllers\SugerirPOIsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -296,6 +297,11 @@
     <Content Include="Views\SugerirPOIs\Details.cshtml" />
     <Content Include="Views\SugerirPOIs\Edit.cshtml" />
     <Content Include="Views\SugerirPOIs\Index.cshtml" />
+    <Content Include="Views\Percursoes\Create.cshtml" />
+    <Content Include="Views\Percursoes\Delete.cshtml" />
+    <Content Include="Views\Percursoes\Details.cshtml" />
+    <Content Include="Views\Percursoes\Edit.cshtml" />
+    <Content Include="Views\Percursoes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

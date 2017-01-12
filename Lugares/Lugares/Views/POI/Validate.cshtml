@@ -23,7 +23,7 @@
             @Html.DisplayNameFor(model => model.duracaoVisita)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.UserID)
+            @Html.DisplayNameFor(model => model.UserCreator)
         </th>
     </tr>
 
@@ -46,7 +46,7 @@
                 @Html.DisplayFor(modelItem => item.duracaoVisita)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.UserID)
+                @Html.DisplayFor(modelItem => item.UserCreator)
             </td>
             <td>
                 @Html.ActionLink("Details", "DetailsValidate", new { id = item.SugerirPoiID }) |
