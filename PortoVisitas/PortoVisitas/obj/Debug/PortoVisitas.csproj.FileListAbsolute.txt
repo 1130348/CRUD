@@ -180,3 +180,8 @@ C:\Users\Joel\Desktop\Project\PortoVisitas\PortoVisitas\bin\Microsoft.Owin.Secur
 C:\Users\Joel\Desktop\Project\PortoVisitas\PortoVisitas\obj\Debug\PortoVisitas.csprojResolveAssemblyReference.cache
 C:\Users\Joel\Desktop\Project\PortoVisitas\PortoVisitas\obj\Debug\PortoVisitas.dll
 C:\Users\Joel\Desktop\Project\PortoVisitas\PortoVisitas\obj\Debug\PortoVisitas.pdb
+C:\Users\Joel\Desktop\Project\PortoVisitas\PortoVisitas\bin\System.Web.Http.dll
+C:\Users\Joel\Desktop\Project\PortoVisitas\PortoVisitas\bin\System.Web.Http.WebHost.dll
+C:\Users\Joel\Desktop\Project\PortoVisitas\PortoVisitas\bin\System.Net.Http.Formatting.xml
+C:\Users\Joel\Desktop\Project\PortoVisitas\PortoVisitas\bin\System.Web.Http.xml
+C:\Users\Joel\Desktop\Project\PortoVisitas\PortoVisitas\bin\System.Web.Http.WebHost.xml
