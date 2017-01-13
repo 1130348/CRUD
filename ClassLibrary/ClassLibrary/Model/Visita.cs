@@ -16,5 +16,6 @@ namespace ClassLibrary.Model
         public string horaInicio { get; set;}
         public int idPercurso { get; set;}
         public int idUser { get; set; }
+        public string userEmail { get; set; }
     }
 }

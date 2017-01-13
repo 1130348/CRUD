@@ -90,12 +90,12 @@
                 );
             //AddOrUpdatePOI(context, 3, 3);
             context.Visitas.AddOrUpdate(i => i.idVisita,
-                new Visita { data = "10/01/2017", descrição = "Visita de TukTuk", horaInicio = "10:00:00", idPercurso = 4, idUser = 1 },
-                new Visita { data = "11/01/2017", descrição = "Visita á la pata", horaInicio = "09:20:00", idPercurso = 5, idUser = 1 },
-                new Visita { data = "12/01/2017", descrição = "Visita estadio Dragao", horaInicio = "12:02:00", idPercurso = 4, idUser = 1 },
-                new Visita { data = "13/01/2017", descrição = "Visita de autocarro", horaInicio = "14:22:00", idPercurso = 5, idUser = 1 },
-                new Visita { data = "14/01/2017", descrição = "Visita de Tu", horaInicio = "16:18:00", idPercurso = 5, idUser = 1 },
-                new Visita { data = "15/01/2017", descrição = "Visita de TukTuktuk", horaInicio = "17:11:00", idPercurso = 4, idUser = 1 });
+                new Visita { data = "10/01/2017", descrição = "Visita de TukTuk", horaInicio = "10:00:00", idPercurso = 4, idUser = 1, userEmail = "admin@isep.ipp.pt" },
+                new Visita { data = "11/01/2017", descrição = "Visita á la pata", horaInicio = "09:20:00", idPercurso = 5, idUser = 1, userEmail = "admin@isep.ipp.pt" },
+                new Visita { data = "12/01/2017", descrição = "Visita estadio Dragao", horaInicio = "12:02:00", idPercurso = 4, idUser = 1, userEmail = "admin@isep.ipp.pt" },
+                new Visita { data = "13/01/2017", descrição = "Visita de autocarro", horaInicio = "14:22:00", idPercurso = 5, idUser = 1, userEmail = "admin@isep.ipp.pt" },
+                new Visita { data = "14/01/2017", descrição = "Visita de Tu", horaInicio = "16:18:00", idPercurso = 5, idUser = 1, userEmail = "admin@isep.ipp.pt" },
+                new Visita { data = "15/01/2017", descrição = "Visita de TukTuktuk", horaInicio = "17:11:00", idPercurso = 4, idUser = 1, userEmail = "admin@isep.ipp.pt" });
 
         }
     }
