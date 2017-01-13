@@ -34,7 +34,8 @@ namespace PortoVisitas.Controllers
             else
             {
                 return Content("Ocorreu um erro: " + response.StatusCode);
-            }
+            }
+
         }
 
         // GET: Percursoes/Details/5
@@ -91,7 +92,8 @@ namespace PortoVisitas.Controllers
             catch
             {
                 return Content("Ocorreu um erro.");
-            }
+            }
+
         }
 
         // GET: Percursoes/Edit/5
@@ -166,7 +168,8 @@ namespace PortoVisitas.Controllers
                 if (percurso == null) return HttpNotFound();
                 return View(percurso);
             }
-            return Content("Ocorreu um erro: " + response.StatusCode);
+            return Content("Ocorreu um erro: " + response.StatusCode);
+
         }
 
         // POST: Percursoes/Delete/5
