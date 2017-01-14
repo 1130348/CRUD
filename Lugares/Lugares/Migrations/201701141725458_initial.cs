@@ -97,6 +97,7 @@ namespace Lugares.Migrations
                         horaInicio = c.String(),
                         idPercurso = c.Int(nullable: false),
                         idUser = c.Int(nullable: false),
+                        userEmail = c.String(),
                     })
                 .PrimaryKey(t => t.idVisita);
             

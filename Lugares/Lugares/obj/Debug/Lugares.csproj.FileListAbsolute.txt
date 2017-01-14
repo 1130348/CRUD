@@ -368,8 +368,6 @@ C:\Users\Joel\Desktop\Project\Lugares\Lugares\obj\Debug\Lugares.pdb
 C:\Users\Joel\Desktop\Project\Lugares\Lugares\obj\Debug\Lugares.Migrations.initial.resources
 C:\Users\Joel\Desktop\Project\Lugares\Lugares\obj\Debug\Lugares.csproj.GenerateResource.Cache
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\obj\Debug\Lugares.csprojResolveAssemblyReference.cache
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\obj\Debug\Lugares.Migrations.initial.resources
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\obj\Debug\Lugares.csproj.GenerateResource.Cache
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\bin\ApplicationInsights.config
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\bin\roslyn\csc.exe
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\bin\roslyn\csc.exe.config
@@ -468,3 +466,5 @@ D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAP
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\bin\System.Web.WebPages.Razor.xml
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\obj\Debug\Lugares.dll
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\obj\Debug\Lugares.pdb
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\obj\Debug\Lugares.Migrations.initial.resources
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\Lugares\obj\Debug\Lugares.csproj.GenerateResource.Cache
