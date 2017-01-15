@@ -1,0 +1,60 @@
+﻿@model IEnumerable<ClassLibrary.Model.SugerirPOI>
+@{
+    ViewBag.Title = "Validate";
+}
+
+<h2>Validate</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Local)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Categoria)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.duracaoVisita)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserCreator)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Local.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Categoria.nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.duracaoVisita)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserCreator)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "DetailsValidate", new { id = item.SugerirPoiID }) |
+                @Html.ActionLink("Deny", "DeleteValidate", new { id = item.SugerirPoiID }) |
+                @Html.ActionLink("Aprove", "AproveValidate", new { id = item.SugerirPoiID })
+            </td>
+        </tr>
+    }
+
+</table>
+

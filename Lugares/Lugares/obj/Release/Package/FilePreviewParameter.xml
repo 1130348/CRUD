@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="Lugares" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\OneDrive\\ISEP\\Licenciatura\ em\ Engenharia\ Informática\\3ºAno\\1º\ Semestre\\LAPR5\\ARQSI\\Repositorio\\Lugares\\Lugares\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\OneDrive\\ISEP\\Licenciatura\ em\ Engenharia\ Informática\\3ºAno\\1º\ Semestre\\LAPR5\\ARQSI\\Repositorio\\Lugares\\Lugares\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DatumContext-Web.config Connection String" description="" value="Data Source=WVM064\SQLEXPRESS;Initial Catalog=DatumContext;Persist Security Info=True;User ID=sa;Password=QAZwsx123!" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\OneDrive\\ISEP\\Licenciatura\ em\ Engenharia\ Informática\\3ºAno\\1º\ Semestre\\LAPR5\\ARQSI\\Repositorio\\Lugares\\Lugares\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DatumContext']/@connectionString" />
+  </parameter>
+</parameters>

@@ -48,18 +48,3 @@ C:\Users\Joel\Desktop\Project\ClassLibrary\ClassLibrary\bin\Debug\Microsoft.AspN
 C:\Users\Joel\Desktop\Project\ClassLibrary\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
 C:\Users\Joel\Desktop\Project\ClassLibrary\ClassLibrary\obj\Debug\ClassLibrary.dll
 C:\Users\Joel\Desktop\Project\ClassLibrary\ClassLibrary\obj\Debug\ClassLibrary.pdb
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\ClassLibrary\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\ClassLibrary\ClassLibrary\bin\Debug\ClassLibrary.dll.config
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\ClassLibrary\ClassLibrary\bin\Debug\ClassLibrary.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\ClassLibrary\ClassLibrary\bin\Debug\ClassLibrary.pdb
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\ClassLibrary\ClassLibrary\bin\Debug\EntityFramework.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\ClassLibrary\ClassLibrary\bin\Debug\EntityFramework.SqlServer.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\ClassLibrary\ClassLibrary\bin\Debug\Microsoft.AspNet.Identity.Core.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\ClassLibrary\ClassLibrary\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\ClassLibrary\ClassLibrary\bin\Debug\Microsoft.Build.Framework.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\ClassLibrary\ClassLibrary\bin\Debug\EntityFramework.xml
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\ClassLibrary\ClassLibrary\bin\Debug\EntityFramework.SqlServer.xml
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\ClassLibrary\ClassLibrary\bin\Debug\Microsoft.AspNet.Identity.Core.xml
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\ClassLibrary\ClassLibrary\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\ClassLibrary\ClassLibrary\obj\Debug\ClassLibrary.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\ClassLibrary\ClassLibrary\obj\Debug\ClassLibrary.pdb

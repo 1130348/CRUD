@@ -71,26 +71,22 @@ C:\Users\Joel\Desktop\Project\Lugares\LugaresTest\obj\Debug\LugaresTest.pdb
 C:\Users\Joel\Desktop\Project\Lugares\LugaresTest\bin\Debug\LugaresTest.dll.config
 C:\Users\Joel\Desktop\Project\Lugares\LugaresTest\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Joel\Desktop\Project\Lugares\LugaresTest\bin\Debug\EntityFramework.SqlServer.xml
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\obj\Debug\LugaresTest.csprojResolveAssemblyReference.cache
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\ApplicationInsights.config
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\csc.exe
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\csc.exe.config
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\csc.rsp
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\csi.rsp
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\vbc.exe.config
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\vbc.rsp
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\VBCSCompiler.exe.config
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\csc.exe
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\csi.exe
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\csi.rsp
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\Microsoft.CodeAnalysis.Scripting.dll
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\System.AppContext.dll
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\System.Collections.Immutable.dll
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\System.Diagnostics.StackTrace.dll
@@ -98,7 +94,10 @@ D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAP
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\System.IO.FileSystem.Primitives.dll
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\System.Reflection.Metadata.dll
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\vbc.exe
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\vbc.exe.config
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\vbc.rsp
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\VBCSCompiler.exe
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\roslyn\VBCSCompiler.exe.config
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\LugaresTest.dll.config
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\LugaresTest.dll
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\LugaresTest.pdb
@@ -142,5 +141,6 @@ D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAP
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\Microsoft.Owin.Security.xml
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\Microsoft.Owin.Security.Cookies.xml
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\obj\Debug\LugaresTest.csprojResolveAssemblyReference.cache
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\obj\Debug\LugaresTest.dll
 D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\LugaresTest\obj\Debug\LugaresTest.pdb
