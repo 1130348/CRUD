@@ -1,83 +1,4 @@
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\obj\Debug\CancelaTest.csprojResolveAssemblyReference.cache
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\ApplicationInsights.config
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\bin\roslyn\csc.exe
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\bin\roslyn\System.Collections.Immutable.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\bin\roslyn\System.Reflection.Metadata.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\bin\roslyn\vbc.exe
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\bin\roslyn\VBCSCompiler.exe
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\bin\roslyn\VBCSCompiler.exe.config
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\roslyn\csc.exe
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\roslyn\System.Collections.Immutable.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\roslyn\System.Reflection.Metadata.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\roslyn\vbc.exe
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\roslyn\VBCSCompiler.exe
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\roslyn\VBCSCompiler.exe.config
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\CancelaTest.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\CancelaTest.pdb
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Cancela.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Newtonsoft.Json.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Net.Http.Formatting.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.Http.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.Owin.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.Optimization.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.Mvc.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.AspNet.Identity.Core.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\ClassLibrary.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.Owin.Security.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.Owin.Security.OAuth.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Owin.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.Http.Owin.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\EntityFramework.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.Owin.Security.Cookies.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.Http.WebHost.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.Web.Infrastructure.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.Razor.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.WebPages.Razor.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.WebPages.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.WebPages.Deployment.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Cancela.pdb
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Newtonsoft.Json.xml
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Net.Http.Formatting.xml
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.Http.xml
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.Owin.xml
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.Optimization.xml
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.Mvc.xml
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.AspNet.Identity.Core.xml
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\ClassLibrary.pdb
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.Owin.Security.xml
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.Owin.Security.OAuth.xml
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.Http.Owin.xml
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\EntityFramework.xml
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.Owin.Security.Cookies.xml
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.Http.WebHost.xml
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.Razor.xml
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.WebPages.Razor.xml
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.WebPages.xml
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.WebPages.Deployment.xml
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\obj\Debug\CancelaTest.dll
-D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\obj\Debug\CancelaTest.pdb
 C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\bin\Debug\ApplicationInsights.config
-C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\bin\Debug\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\bin\Debug\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\bin\Debug\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\bin\Debug\roslyn\csc.exe
 C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -90,15 +11,6 @@ C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\bin\Debug\roslyn\System.Reflec
 C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\bin\Debug\roslyn\vbc.exe
 C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\bin\Debug\roslyn\VBCSCompiler.exe
 C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\bin\Debug\roslyn\VBCSCompiler.exe.config
-C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\bin\Debug\bin\roslyn\csc.exe
-C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\bin\Debug\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\bin\Debug\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\bin\Debug\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\bin\Debug\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\bin\Debug\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\bin\Debug\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\bin\Debug\bin\roslyn\vbc.exe
-C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\bin\Debug\bin\roslyn\VBCSCompiler.exe
 C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\bin\Debug\CancelaTest.dll.config
 C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\bin\Debug\CancelaTest.dll
 C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\bin\Debug\CancelaTest.pdb
@@ -153,3 +65,70 @@ C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\bin\Debug\System.Web.WebPages.
 C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\obj\Debug\CancelaTest.csprojResolveAssemblyReference.cache
 C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\obj\Debug\CancelaTest.dll
 C:\Users\Joel\Desktop\Project\Lugares\CancelaTest\obj\Debug\CancelaTest.pdb
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\roslyn\csc.exe
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\roslyn\System.Collections.Immutable.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\roslyn\System.Reflection.Metadata.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\roslyn\vbc.exe
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\roslyn\VBCSCompiler.exe
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\roslyn\VBCSCompiler.exe.config
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\ApplicationInsights.config
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\CancelaTest.dll.config
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\CancelaTest.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\CancelaTest.pdb
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Cancela.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\ClassLibrary.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\EntityFramework.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\EntityFramework.SqlServer.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Newtonsoft.Json.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Net.Http.Formatting.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.Http.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.Http.WebHost.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.Owin.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.Optimization.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.Mvc.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.Owin.Security.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Owin.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.Http.Owin.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.Razor.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.WebPages.Razor.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.WebPages.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Cancela.pdb
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\ClassLibrary.pdb
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\EntityFramework.xml
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\EntityFramework.SqlServer.xml
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Newtonsoft.Json.xml
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Net.Http.Formatting.xml
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.Http.xml
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.Http.WebHost.xml
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.Owin.xml
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.Optimization.xml
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.Mvc.xml
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.Owin.Security.xml
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.Http.Owin.xml
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.Razor.xml
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.WebPages.Razor.xml
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.WebPages.xml
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\obj\Debug\CancelaTest.csprojResolveAssemblyReference.cache
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\obj\Debug\CancelaTest.dll
+D:\OneDrive\ISEP\Licenciatura em Engenharia Informática\3ºAno\1º Semestre\LAPR5\ARQSI\Repositorio\Lugares\CancelaTest\obj\Debug\CancelaTest.pdb
