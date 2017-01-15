@@ -9,6 +9,7 @@ using System.Web.Mvc;
 
 namespace LugaresTest.LugaresControllers
 {
+    [TestClass]
     public class PercursoControllerTests
     {
         [TestMethod]

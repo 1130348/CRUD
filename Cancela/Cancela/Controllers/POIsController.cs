@@ -18,6 +18,13 @@ namespace Cancela.Controllers
     public class POIsController : ApiController
     {
         private DatumContext db = new DatumContext();
+        
+        //public POIsController() { }
+
+        public POIsController(DatumContext context)
+        {
+            this.db = context;
+        }
 
         // GET: api/POIs
         public IEnumerable<POIDTOSend> GetPOIs()
